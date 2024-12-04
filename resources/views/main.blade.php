@@ -9,7 +9,7 @@
             margin: 0;
             height: 100vh; 
             display: flex;
-            flex-direction: column; /* Устанавливаем вертикальное направление */
+            flex-direction: column; 
         }
         .header {
             background-color: white; 
@@ -60,9 +60,10 @@
             position: relative;
             z-index: 0;
             border-radius: 10px;
+            transition: box-shadow 0.3s ease; 
         }
-        .buttons:hover{
-            background-color:white;
+        .buttons:hover{ 
+            box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
         }
     </style>
 </head>
@@ -73,18 +74,17 @@
     <div class="content">
         <div class="button-header">
             <div class="button-in-header">
-            <button class="buttons"type="button">Я кнопка (верх)</button>
-            <button class="buttons"type="button">Я кнопка (верх)</button>
-            <button class="buttons"type="button">Я кнопка (верх)</button>
-            <button class="buttons"type="button">Я кнопка (верх)</button>
-            <button class="buttons"type="button">Я кнопка (верх)</button>
-            <button class="buttons"type="button">Я кнопка (верх)</button>
-            <button class="buttons"type="button">Я кнопка (верх)</button>
+            <button class="buttons"type="button">Разное</button>
+            <button class="buttons"type="button">Фильмы</button>
+            <button class="buttons"type="button">Договоры</button>
+            <button class="buttons"type="button">Документы</button>
+            <button class="buttons"type="button">Справочники</button>
+            <button class="buttons"type="button">Окно</button>
+            <button class="buttons"type="button">Справка</button>
             </div>
             
         </div>
         <div class="button-content">
-            <button type="button">Я кнопка (низ)</button>
         </div>
     </div>
 </body>
