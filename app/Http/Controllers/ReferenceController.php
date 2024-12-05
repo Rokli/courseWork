@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class ReferenceController extends Controller
 {
-    public function __construct(){
-        
+    public function show(){
+        return view("reference");
     }
 }

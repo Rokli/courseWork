@@ -65,6 +65,41 @@
         .buttons:hover{ 
             box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
         }
+        .panel {
+            background-color: whitesmoke;
+            height: calc(100% - 65px); 
+            width: calc(100% - 100px); 
+            margin: 15px 50px; 
+            box-sizing: border-box; 
+            display: flex;
+            flex-direction: column; 
+        }
+        .panell {
+            background-color: black;
+            height: calc(100% - 80px); 
+            width: calc(100% - 30px); 
+            margin: 15px 20px; 
+            box-sizing: border-box; 
+        }
+        .button-in-panel{
+            display: flex;
+            width: 100%;
+            padding: 0 20px;
+            justify-content:space-around;
+        }
+        .buttons-in-panel{
+            width: 200px;
+            height: 50px;
+            margin: 5px 50px; 
+            border: none;
+            outline: none;
+            color: #fff;
+            background: #111;
+            cursor: pointer;
+            z-index: 0;
+            transition: box-shadow 0.3s ease; 
+        }
+
     </style>
 </head>
 <body>
@@ -80,13 +115,25 @@
             <button class="buttons"type="button">Документы</button>
             <button class="buttons"type="button">Справочники</button>
             <button class="buttons"type="button">Окно</button>
-            <a href="{{ url('/home/reference') }}">
             <button class="buttons"type="button">Справка</button>
-            </a>
             </div>
             
         </div>
-        <div class="button-content">
+        <div class="content">
+                <div class = "panel">
+                    <div class="button-in-panel">
+                        <button class="buttons-in-panel"type="button">Разное</button>
+                        <button class="buttons-in-panel"type="button">Фильмы</button>
+                        <button class="buttons-in-panel"type="button">Договоры</button>
+                        <button class="buttons-in-panel"type="button">Документы</but>
+                        <button class="buttons-in-panel"type="button">Справочники</but>
+                        <button class="buttons-in-panel"type="button">Окно</button>
+                        <button class="buttons-in-panel"type="button">Справка</button>
+                    </div>
+                    <div class="panell">
+
+                    </div>
+                </div>
         </div>
     </div>
 </body>
